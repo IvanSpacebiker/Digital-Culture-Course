@@ -8,7 +8,7 @@ class PlotDrawer:
         ax = fig.add_subplot()
 
         for i in range(len(genres)):
-            genre = genres[i]
+            genre = genres[i].data
             name = genre_names[i]
             ax.scatter(genre["Year"], genre["Rating"], label=name)
 
